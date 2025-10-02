@@ -11,7 +11,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/products/category/products");
+        const response = await fetch("https://cozydecor-ecom-backend.onrender.com/api/products/category/products");
         const data = await response.json();
 
         // ✅ Handle both shapes: { products: [...] } OR just [...]
