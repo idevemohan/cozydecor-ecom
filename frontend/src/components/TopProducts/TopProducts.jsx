@@ -14,7 +14,7 @@ const TopProducts = () => {
     const fetchTopProducts = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/products/category/bestselling"
+          "https://cozydecor-ecom-backend.onrender.com/api/products/category/bestselling"
         );
         const data = await response.json();
 
